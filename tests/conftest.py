@@ -11,7 +11,7 @@ def api_key():
 
 @pytest.fixture
 def channel_handle():
-    with mock.patch.dict(os.environ, {"AIRFLOW_VAR_CHANNEL_HANDLE": "MRCHEESE"}):
+    with mock.patch.dict(os.environ, {"AIRFLOW_VAR_CHANNEL_HANDLE": "MrBeast"}):
         yield Variable.get("CHANNEL_HANDLE")
 
 @pytest.fixture
